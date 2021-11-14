@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FishingInDenmark">
         <activity
-            android:name=".MainActivity"
+            android:name=".MainPage"
             android:exported="true" />
         <activity
             android:name=".ForgotPassword"
@@ -19,7 +19,7 @@
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity
-            android:name=".MainPage"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
