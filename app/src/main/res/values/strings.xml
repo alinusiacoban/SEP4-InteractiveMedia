@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">FishingInDenmark</string>
+    <string name="app_name">TerraSmart</string>
     <string name="register">Register</string>
     <string name="log_in">Log in</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="forgotPassword">Reset password</string>
-    <string name="fishingDKBanner">FishingDK</string>
-    <string name="fishingDKSubbanner">Fish easier</string>
+    <string name="fishingDKBanner">TerraSmart</string>
+    <string name="fishingDKSubbanner">Reptile Terrarium</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="email">Email</string>
     <string name="confirm_password">Confirm Password</string>

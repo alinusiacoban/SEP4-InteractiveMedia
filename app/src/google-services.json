@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "666301765378",
+    "project_id": "terrasmart-5f4d8",
+    "storage_bucket": "terrasmart-5f4d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666301765378:android:4411368969f57b713a141b",
+        "android_client_info": {
+          "package_name": "com.interactivemedia.terrasmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666301765378-ae02g21uuvs9see4j11hp93ppqc3k406.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE5mkHbGFek5igHt-y5FDxX5kmnxbFBew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666301765378-ae02g21uuvs9see4j11hp93ppqc3k406.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
