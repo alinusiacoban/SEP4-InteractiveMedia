@@ -26,10 +26,6 @@
         app:itemTextColor="@color/tab_item"
         android:background="@drawable/tab_corners_shape"
        >
-
-
-
-
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
