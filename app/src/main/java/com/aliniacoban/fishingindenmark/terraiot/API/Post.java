@@ -1,4 +1,4 @@
-package com.aliniacoban.fishingindenmark;
+package com.aliniacoban.fishingindenmark.terraiot.API;
 
 import com.google.gson.annotations.SerializedName;
 

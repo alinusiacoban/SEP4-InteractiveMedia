@@ -1,4 +1,4 @@
-package com.aliniacoban.fishingindenmark;
+package com.aliniacoban.fishingindenmark.terraiot;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,18 +6,15 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.TextView;
 
+import com.aliniacoban.fishingindenmark.R;
+import com.aliniacoban.fishingindenmark.terraiot.ui.CO2Fragment;
+import com.aliniacoban.fishingindenmark.terraiot.ui.HomeFragment;
+import com.aliniacoban.fishingindenmark.terraiot.ui.HumidityFragment;
+import com.aliniacoban.fishingindenmark.terraiot.ui.OptionsFragment;
+import com.aliniacoban.fishingindenmark.terraiot.ui.TemperatureFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainPage extends AppCompatActivity {
 
@@ -45,15 +42,19 @@ public class MainPage extends AppCompatActivity {
                     break;
 
                 case R.id.item2:
-                    selectedFragment = new PictureFragment();
+                    selectedFragment = new TemperatureFragment();
                     break;
 
                 case R.id.item3:
-                    selectedFragment = new MapFragment();
+                    selectedFragment = new HumidityFragment();
                     break;
 
                 case R.id.item4:
-                    selectedFragment = new ProfileFragment();
+                    selectedFragment = new CO2Fragment();
+                    break;
+
+                case R.id.item5:
+                    selectedFragment = new OptionsFragment();
                     break;
             }
 

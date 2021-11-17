@@ -1,4 +1,6 @@
-package com.aliniacoban.fishingindenmark;
+package com.aliniacoban.fishingindenmark.terraiot.API;
+
+import com.aliniacoban.fishingindenmark.terraiot.API.Post;
 
 import java.util.List;
 

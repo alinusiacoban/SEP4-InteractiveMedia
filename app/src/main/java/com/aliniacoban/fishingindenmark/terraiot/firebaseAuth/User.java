@@ -1,4 +1,4 @@
-package com.aliniacoban.fishingindenmark;
+package com.aliniacoban.fishingindenmark.terraiot.firebaseAuth;
 
 public class User {
 

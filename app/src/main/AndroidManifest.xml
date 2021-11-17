@@ -11,16 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FishingInDenmark">
         <activity
-            android:name=".MainPage"
+            android:name="com.aliniacoban.fishingindenmark.terraiot.MainPage"
             android:exported="true" />
         <activity
-            android:name=".ForgotPassword"
+            android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.ForgotPassword"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ProfileActivity"
+            android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.RegisterActivity"
             android:exported="true" />
     </application>
 
