@@ -8,11 +8,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.aliniacoban.fishingindenmark.R;
-import com.aliniacoban.fishingindenmark.terraiot.ui.CO2Fragment;
-import com.aliniacoban.fishingindenmark.terraiot.ui.HomeFragment;
-import com.aliniacoban.fishingindenmark.terraiot.ui.HumidityFragment;
-import com.aliniacoban.fishingindenmark.terraiot.ui.OptionsFragment;
-import com.aliniacoban.fishingindenmark.terraiot.ui.TemperatureFragment;
+import com.aliniacoban.fishingindenmark.terraiot.ui.co2.CO2Fragment;
+import com.aliniacoban.fishingindenmark.terraiot.ui.home.HomeFragment;
+import com.aliniacoban.fishingindenmark.terraiot.ui.humidity.HumidityFragment;
+import com.aliniacoban.fishingindenmark.terraiot.ui.options.OptionsFragment;
+import com.aliniacoban.fishingindenmark.terraiot.ui.temperature.TemperatureFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 

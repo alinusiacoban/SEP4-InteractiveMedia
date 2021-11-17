@@ -1,4 +1,4 @@
-package com.aliniacoban.fishingindenmark.terraiot.ui;
+package com.aliniacoban.fishingindenmark.terraiot.ui.co2;
 
 import android.os.Bundle;
 

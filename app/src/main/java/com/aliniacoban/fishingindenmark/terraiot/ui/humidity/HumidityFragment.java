@@ -1,4 +1,4 @@
-package com.aliniacoban.fishingindenmark.terraiot.ui;
+package com.aliniacoban.fishingindenmark.terraiot.ui.humidity;
 
 import android.os.Bundle;
 

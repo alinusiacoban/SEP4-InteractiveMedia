@@ -1,4 +1,4 @@
-package com.aliniacoban.fishingindenmark.terraiot.ui;
+package com.aliniacoban.fishingindenmark.terraiot.ui.options;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.aliniacoban.fishingindenmark.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link TemperatureFragment#newInstance} factory method to
+ * Use the {@link OptionsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class TemperatureFragment extends Fragment {
+public class OptionsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class TemperatureFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public TemperatureFragment() {
+    public OptionsFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class TemperatureFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment TemperatureFragment.
+     * @return A new instance of fragment OptionsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static TemperatureFragment newInstance(String param1, String param2) {
-        TemperatureFragment fragment = new TemperatureFragment();
+    public static OptionsFragment newInstance(String param1, String param2) {
+        OptionsFragment fragment = new OptionsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class TemperatureFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_temperature, container, false);
+        return inflater.inflate(R.layout.fragment_options, container, false);
     }
 }
