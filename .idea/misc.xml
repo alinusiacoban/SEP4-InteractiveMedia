@@ -27,8 +27,21 @@
         <entry key="..\:/ProiectBunAndroid/app/src/main/res/layout/fragment_settings.xml" value="0.14427083333333332" />
         <entry key="..\:/ProiectBunAndroid/app/src/main/res/menu/menu2.xml" value="0.1" />
         <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/activity_forgot_password.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/activity_login.xml" value="0.16302083333333334" />
         <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/activity_main2.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/activity_register.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/c_o2_fragment.xml" value="0.16302083333333334" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/fragment_c_o2.xml" value="0.264" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/fragment_dashboard.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/fragment_humidity.xml" value="0.2" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/fragment_notifications.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/fragment_options.xml" value="0.4" />
         <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/fragment_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/fragment_temperature.xml" value="0.2" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/layout/menu_fragment.xml" value="0.16302083333333334" />
+        <entry key="..\:/Users/Dell WOrkstation/Desktop/SEP4 - Interactive Media/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
         <entry key="app/src/main/res/layout/activity_main_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.23802083333333332" />

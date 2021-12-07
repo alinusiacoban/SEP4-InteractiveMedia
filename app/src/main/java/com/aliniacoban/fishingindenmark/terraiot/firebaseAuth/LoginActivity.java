@@ -1,8 +1,5 @@
 package com.aliniacoban.fishingindenmark.terraiot.firebaseAuth;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -13,15 +10,18 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.aliniacoban.fishingindenmark.R;
-import com.aliniacoban.fishingindenmark.terraiot.MainPage;
+import com.aliniacoban.fishingindenmark.terraiot.MainActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView register;
     private EditText loginEmail, loginPassword;
     private Button loginButton;
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         register = (TextView) findViewById(R.id.registerText);
         register.setOnClickListener(this);
@@ -106,13 +106,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     if (user.isEmailVerified()) {
                         //redirect to user profile
-                        startActivity(new Intent(MainActivity.this, MainPage.class));
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     } else {
                         user.sendEmailVerification();
-                        Toast.makeText(MainActivity.this, "Check your email to verify your account", Toast.LENGTH_LONG).show();
+                        Toast.makeText(LoginActivity.this, "Check your email to verify your account", Toast.LENGTH_LONG).show();
                     }
                 }else {
-                    Toast.makeText(MainActivity.this, "Failed to login", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "Failed to login", Toast.LENGTH_LONG).show();
                 }
             }
         });

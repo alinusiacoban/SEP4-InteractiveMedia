@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".terraiot.ui.temperature.TemperatureFragment">
+    tools:context=".terraiot.ui.co2.CO2Fragment">
 
     <TextView
-        android:id="@+id/text_temperature"
+        android:id="@+id/text_co2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

@@ -11,5 +11,9 @@
     <string name="email">Email</string>
     <string name="confirm_password">Confirm Password</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_temperature">Temperature</string>
+    <string name="title_humidity">Humidity</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_co2">CO2</string>
 </resources>

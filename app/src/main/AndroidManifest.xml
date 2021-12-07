@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aliniacoban.fishingindenmark">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,13 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FishingInDenmark">
         <activity
-            android:name="com.aliniacoban.fishingindenmark.terraiot.MainPage"
-            android:exported="true" />
-        <activity
             android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.ForgotPassword"
             android:exported="true" />
         <activity
-            android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.MainActivity"
+            android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +26,8 @@
         <activity
             android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.RegisterActivity"
             android:exported="true" />
+        <activity android:name=".terraiot.MainActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

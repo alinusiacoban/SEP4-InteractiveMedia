@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.aliniacoban.fishingindenmark.terraiot.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_humidity"
+            app:destination="@id/navigation_humidity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_humidity"
+        android:name="com.aliniacoban.fishingindenmark.terraiot.ui.humidity.HumidityFragment"
+        android:label="@string/title_humidity"
+        tools:layout="@layout/fragment_humidity" >
+        <action
+            android:id="@+id/action_navigation_humidity_to_navigation_temperature"
+            app:destination="@id/navigation_temperature" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_temperature"
+        android:name="com.aliniacoban.fishingindenmark.terraiot.ui.temperature.TemperatureFragment"
+        android:label="@string/title_temperature"
+        tools:layout="@layout/fragment_temperature" >
+    <action
+        android:id="@+id/action_navigation_temperature_to_navigation_co2"
+        app:destination="@id/navigation_co2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_co2"
+        android:name="com.aliniacoban.fishingindenmark.terraiot.ui.co2.CO2Fragment"
+        android:label="@string/title_co2"
+        tools:layout="@layout/c_o2_fragment" >
+        <action
+            android:id="@+id/action_navigation_co2_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.aliniacoban.fishingindenmark.terraiot.ui.menu.MenuFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/menu_fragment" />
+</navigation>
