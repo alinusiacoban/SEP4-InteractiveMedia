@@ -16,4 +16,8 @@
     <string name="title_humidity">Humidity</string>
     <string name="title_menu">Menu</string>
     <string name="title_co2">CO2</string>
+    <string name="co2">CO2 SETTINGS</string>
+    <string name="temperature">TEMPERATURE SETTINGS</string>
+    <string name="humidity">HUMIDITY SETTINGS</string>
+    <string name="dash">-</string>
 </resources>
