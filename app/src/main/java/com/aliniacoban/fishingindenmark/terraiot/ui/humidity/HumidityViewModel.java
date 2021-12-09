@@ -10,7 +10,7 @@ public class HumidityViewModel extends ViewModel {
 
     public HumidityViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is humidity fragment");
     }
 
     public LiveData<String> getText() {
