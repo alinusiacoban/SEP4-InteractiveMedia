@@ -20,6 +20,8 @@ public class MenuFragment extends Fragment {
         private TextView t1,t2;
         private MenuViewModel menuViewModel;
         private @NonNull MenuFragmentBinding binding;
+        TextView profile;
+        TextView create;
 
         public View onCreateView(@NonNull LayoutInflater inflater,
                                  ViewGroup container, Bundle savedInstanceState) {
@@ -36,6 +38,9 @@ public class MenuFragment extends Fragment {
                     textView.setText(s);
                 }
             });
+
+
+
             t2=root.findViewById(R.id.viewTerrarium);
             t2.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -44,6 +49,29 @@ public class MenuFragment extends Fragment {
                     startActivity(intent);
                 }
             });
+
+
+            profile=(TextView) root.findViewById(R.id.profile);
+            profile.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent= new Intent(getActivity(), SettingActivity.class);
+                    startActivity(intent);
+                    onDestroy();
+                }
+            });
+
+            create=(TextView) root.findViewById(R.id.creat_terrarium);
+            create.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent= new Intent(getActivity(), CreateTerrarium.class);
+                    startActivity(intent);
+                    onDestroy();
+                }
+            });
+
+
             return root;
         }
 

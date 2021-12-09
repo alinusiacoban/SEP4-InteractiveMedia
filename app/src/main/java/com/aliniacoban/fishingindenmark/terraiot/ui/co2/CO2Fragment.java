@@ -19,12 +19,10 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
-import com.github.mikephil.charting.listener.OnChartGestureListener;
-import com.github.mikephil.charting.listener.OnChartValueSelectedListener;
 
 import java.util.ArrayList;
 
-public class CO2Fragment extends Fragment  {
+public class CO2Fragment extends Fragment {
 
     private CO2ViewModel co2ViewModel;
     private CO2FragmentBinding binding;

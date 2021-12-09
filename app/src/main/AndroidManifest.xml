@@ -12,13 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FishingInDenmark">
         <activity
-            android:name=".terraiot.ui.menu.ViewAllTerrarium"
+            android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.ForgotPassword"
             android:exported="true" />
         <activity
-            android:name=".terraiot.firebaseAuth.ForgotPassword"
-            android:exported="true" />
-        <activity
-            android:name=".terraiot.firebaseAuth.LoginActivity"
+            android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +24,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".terraiot.firebaseAuth.RegisterActivity"
+            android:name="com.aliniacoban.fishingindenmark.terraiot.firebaseAuth.RegisterActivity"
             android:exported="true" />
-        <activity
-            android:name=".terraiot.MainActivity"
-            android:exported="true" />
+        <activity android:name=".terraiot.MainActivity"
+            android:exported="true"/>
+        <activity android:name=".terraiot.ui.menu.ViewAllTerrarium"
+            android:exported="true"/>
+        <activity android:name=".terraiot.ui.menu.CreateTerrarium"
+            android:exported="true"/>
+        <activity android:name=".terraiot.ui.menu.SettingActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>
