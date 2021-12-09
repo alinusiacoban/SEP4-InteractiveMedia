@@ -25,6 +25,9 @@ public class ViewAllTerrarium extends AppCompatActivity {
         recyclerView.hasFixedSize();
         List<Terrarium> terrariumList = new ArrayList<>();
         terrariumList.add(new Terrarium("MyDragon'sHome"));
+        terrariumList.add(new Terrarium("Stupid Snake"));
+        terrariumList.add(new Terrarium("Flying Lizard"));
+        terrariumList.add(new Terrarium("Running turtle"));
 
 
         ViewTerrariumAdapter adapter = new ViewTerrariumAdapter(terrariumList);

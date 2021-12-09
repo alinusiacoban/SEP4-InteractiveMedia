@@ -23,17 +23,17 @@
     </LinearLayout>
 
     <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/co2_chart"
-        android:layout_width="288dp"
-        android:layout_height="54dp"
+        android:id="@+id/temperature_chart"
+        android:layout_width="match_parent"
+        android:layout_height="549dp"
         android:layout_above="@+id/seekBar1"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="313dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="280dp" />
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="12dp" />
 
     <SeekBar
         android:id="@+id/seekBar2"

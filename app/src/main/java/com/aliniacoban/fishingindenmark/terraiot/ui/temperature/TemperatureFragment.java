@@ -13,13 +13,22 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 
+import com.aliniacoban.fishingindenmark.R;
 import com.aliniacoban.fishingindenmark.databinding.FragmentTemperatureBinding;
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+
+import java.util.ArrayList;
 
 
 public class TemperatureFragment extends Fragment {
 
     private TemperatureViewModel temperatureViewModel;
     private @NonNull FragmentTemperatureBinding binding;
+    private LineChart mChart;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -36,6 +45,25 @@ public class TemperatureFragment extends Fragment {
                 textView.setText(s);
             }
         });
+        mChart=root.findViewById(R.id.temperature_chart);
+
+        mChart.setDragEnabled(true);
+        mChart.setScaleEnabled(false);
+        ArrayList<Entry> yValue= new ArrayList<>();
+
+        yValue.add(new Entry(0,60f));
+        yValue.add(new Entry(1,50f));
+        yValue.add(new Entry(2,70f));
+        yValue.add(new Entry(3,30f));
+        yValue.add(new Entry(4,50f));
+        yValue.add(new Entry(5,60f));
+        LineDataSet set1= new LineDataSet(yValue,"Data set 1");
+        set1.setFillAlpha(110);
+
+        ArrayList<ILineDataSet> dataSets= new ArrayList<>();
+        dataSets.add(set1);
+        LineData data= new LineData(dataSets);
+        mChart.setData(data);
         return root;
     }
 

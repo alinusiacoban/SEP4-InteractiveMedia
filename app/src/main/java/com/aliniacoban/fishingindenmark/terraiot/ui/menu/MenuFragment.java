@@ -17,7 +17,7 @@ import com.aliniacoban.fishingindenmark.R;
 import com.aliniacoban.fishingindenmark.databinding.MenuFragmentBinding;
 
 public class MenuFragment extends Fragment {
-        private TextView t1,t2;
+        private TextView t1;
         private MenuViewModel menuViewModel;
         private @NonNull MenuFragmentBinding binding;
         TextView profile;
@@ -41,8 +41,8 @@ public class MenuFragment extends Fragment {
 
 
 
-            t2=root.findViewById(R.id.viewTerrarium);
-            t2.setOnClickListener(new View.OnClickListener() {
+            t1=root.findViewById(R.id.viewTerrarium);
+            t1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent= new Intent(getActivity(), ViewAllTerrarium.class);
