@@ -10,7 +10,7 @@ public class MenuViewModel extends ViewModel {
 
     public MenuViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("Menu");
     }
 
     public LiveData<String> getText() {

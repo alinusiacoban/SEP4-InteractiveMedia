@@ -113,7 +113,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         progressBar.setVisibility(View.VISIBLE);
-                        User user = new User(username, password);
+                        User user = new User(email,username, password);
                         FirebaseDatabase.getInstance("https://terrasmart-5f4d8-default-rtdb.firebaseio.com/").getReference("User")
                                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user)
                                 .addOnCompleteListener(task1 -> {
