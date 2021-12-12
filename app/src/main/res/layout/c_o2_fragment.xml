@@ -24,13 +24,16 @@
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/co2_chart"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_width="413dp"
+        android:layout_height="595dp"
         android:layout_above="@+id/seekBar1"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-       />
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="1dp" />
 
     <SeekBar
         android:id="@+id/seekBar2"

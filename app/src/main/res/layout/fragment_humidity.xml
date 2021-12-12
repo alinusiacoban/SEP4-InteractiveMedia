@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".terraiot.ui.co2.CO2Fragment">
+    tools:context=".terraiot.ui.humidity.HumidityFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
     </LinearLayout>
 
     <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/co2_chart"
+        android:id="@+id/humidity_chart"
         android:layout_width="288dp"
         android:layout_height="54dp"
         android:layout_above="@+id/seekBar1"
