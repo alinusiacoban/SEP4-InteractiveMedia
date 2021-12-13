@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    tools:context="com.aliniacoban.fishingindenmark.terraiot.ui.home.HomeFragment">
+    tools:context="com.aliniacoban.fishingindenmark.terraiot.ui.home.HomeFragment"
+    android:background="#D3D3D3">
 
     <TextView
         android:id="@+id/text_home"
@@ -86,7 +86,7 @@
                     android:background="@drawable/text_view_circle"
                     android:gravity="center"
                     android:layout_gravity="top"
-                    android:text="pula mea"
+                    android:text=""
                     android:textColor="@color/colorBlack"
                     />
 
@@ -104,7 +104,7 @@
                     android:background="@drawable/text_view_circle"
                     android:gravity="center"
                     android:layout_gravity="top"
-                    android:text="pula calului"
+                    android:text=""
                     android:textColor="@color/colorBlack"
                     />
             </LinearLayout>
@@ -145,7 +145,7 @@
                 android:background="@drawable/text_view_circle"
                 android:layout_gravity="top"
                 android:gravity="center"
-                android:text="pulapizda"
+                android:text=""
                 android:textColor="@color/colorBlack"
 
                 />
