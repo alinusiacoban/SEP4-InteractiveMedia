@@ -34,9 +34,9 @@ public class TerrariumAdapter extends RecyclerView.Adapter<TerrariumAdapter.View
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         if (terrariums != null && position <= terrariums.size()) {
-            holder.terrariumName.setText(terrariums.get(position).getTerrariumName() + " ");
-            holder.reptileType.setText(terrariums.get(position).getReptileLivingInTerrarium() + " ");
-            switch (terrariums.get(position).getReptileLivingInTerrarium()) {
+            holder.terrariumName.setText(terrariums.get(position).getName() + " ");
+            holder.reptileType.setText(terrariums.get(position).getType() + " ");
+            switch (terrariums.get(position).getType()) {
                 case "Crocodile":
                     holder.imageReptile.setBackgroundResource(R.drawable.crocodile);
                     break;
