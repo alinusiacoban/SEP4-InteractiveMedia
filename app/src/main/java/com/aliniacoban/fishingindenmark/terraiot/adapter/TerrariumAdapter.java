@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -64,15 +65,31 @@ public class TerrariumAdapter extends RecyclerView.Adapter<TerrariumAdapter.View
 
     class ViewHolder extends RecyclerView.ViewHolder {
 
-        private final TextView terrariumName;
-        private final TextView reptileType;
-        private final ImageView imageReptile;
+        private TextView terrariumName;
+        private TextView reptileType;
+        private ImageView imageReptile;
+        private Button deleteTerrarium;
 
         ViewHolder(@NonNull View itemView, TerrariumAdapter.OnItemClickListener listener) {
             super(itemView);
             terrariumName = itemView.findViewById(R.id.terrariumNameForTerrariumList);
             reptileType = itemView.findViewById(R.id.reptileTypeForTerrariumList);
             imageReptile = itemView.findViewById(R.id.imageForTerrariumList);
+            deleteTerrarium = itemView.findViewById(R.id.buttonDel);
+
+            deleteTerrarium.setOnClickListener( v-> {
+                if(listener!=null){
+                    int pos = getAdapterPosition();
+                    if(pos != RecyclerView.NO_POSITION){
+                        try{
+                            listener.onRemoveClickListener(pos);
+                        }catch(ExecutionException | InterruptedException e){
+                            e.printStackTrace();
+                        }
+                        terrariums.remove(pos);
+                    }
+                }
+            });
         }
 
     }

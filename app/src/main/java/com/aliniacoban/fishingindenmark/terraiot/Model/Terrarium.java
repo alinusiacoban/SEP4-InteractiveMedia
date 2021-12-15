@@ -18,7 +18,7 @@ public class Terrarium {
     {
         this.terrariumId = terrariumId;
         this.terrariumName = terrariumName;
-        this.reptileLivingInTerrarium = terrariumName;
+        this.reptileLivingInTerrarium = reptileLivingInTerrarium;
     }
 
     @Ignore

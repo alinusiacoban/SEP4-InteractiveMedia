@@ -23,6 +23,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.aliniacoban.fishingindenmark.R;
 import com.aliniacoban.fishingindenmark.databinding.MenuFragmentBinding;
@@ -73,42 +75,6 @@ public class MenuFragment extends Fragment {
         profileInformation = root.findViewById(R.id.displayUserInfo);
         logOutUser = root.findViewById(R.id.signOutUser);
         resetPassword = root.findViewById(R.id.resetPasswordProfile);
-        addTerrarium = root.findViewById(R.id.addTerrariumToList);
-
-        addTerrarium.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                View view = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_add_terrarium, null);
-                Button createTerrarium = view.findViewById(R.id.createNewTerrarium);
-                EditText terrariumName = view.findViewById(R.id.terrariumNameCreateTerrarium);
-                EditText reptileType = view.findViewById(R.id.terrariumReptileCreateTerrarium);
-                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                builder.setView(view);
-                AlertDialog dialog = builder.create();
-                dialog.show();
-
-                createTerrarium.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        String terrarium_name = " ";
-                        String reptile_type = " ";
-
-                        terrarium_name = terrariumName.getText().toString();
-                        reptile_type = reptileType.getText().toString();
-
-                        try{
-                            createTerrariumViewModel.insertTerrarium(new Terrarium(
-                                    terrarium_name,
-                                    reptile_type
-                            ));Toast.makeText(getContext(), "Terrarium created", Toast.LENGTH_SHORT).show();
-                        }catch(ExecutionException | InterruptedException e){
-                            e.printStackTrace();
-                        }
-                    }
-                });
-
-            }
-        });
 
         profileInformation.setOnClickListener(new View.OnClickListener(){
                         @Override
@@ -190,21 +156,6 @@ public class MenuFragment extends Fragment {
                 });
             }
         });
-
-        terrariumList = root.findViewById(R.id.terrariumsList);
-        terrariumList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ViewTerrariums fragment = new ViewTerrariums();
-                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment1, fragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-            }
-        });
-
-
         return root;
     }
 
@@ -212,6 +163,28 @@ public class MenuFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
+        super.onViewCreated(view, savedInstanceState);
+
+        final NavController navController = Navigation.findNavController(view);
+        terrariumList = view.findViewById(R.id.terrariumsList);
+        addTerrarium = view.findViewById(R.id.addTerrariumToList);
+
+        terrariumList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.viewTerrariums);
+            }
+        });
+        addTerrarium.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.createTerrarium);
+            }
+        });
+
     }
 
 }
