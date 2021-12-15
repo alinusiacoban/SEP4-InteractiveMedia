@@ -49,5 +49,29 @@
         android:id="@+id/navigation_menu"
         android:name="com.aliniacoban.fishingindenmark.terraiot.ui.menu.MenuFragment"
         android:label="@string/title_menu"
-        tools:layout="@layout/menu_fragment" />
+        tools:layout="@layout/menu_fragment" >
+        <action
+            android:id="@+id/action_navigation_menu_to_viewTerrariums"
+            app:destination="@id/viewTerrariums" />
+        <action
+            android:id="@+id/action_navigation_menu_to_createTerrarium"
+            app:destination="@id/createTerrarium" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewTerrariums"
+        android:name="com.aliniacoban.fishingindenmark.terraiot.ui.terrariums.ViewTerrariums"
+        android:label="Terrarium's List">
+        <action
+            android:id="@+id/action_viewTerrariums_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/createTerrarium"
+        android:name="com.aliniacoban.fishingindenmark.terraiot.ui.createterrarium.CreateTerrarium"
+        android:label="Add Terrarium"
+        tools:layout="@layout/create_terrarium_fragment">
+        <action
+            android:id="@+id/action_createTerrarium_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+    </fragment>
 </navigation>

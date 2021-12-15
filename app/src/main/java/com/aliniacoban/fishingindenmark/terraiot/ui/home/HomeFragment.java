@@ -48,14 +48,13 @@ public class HomeFragment extends Fragment {
                     textView.setText(s);
                 }
             });
-
             co2text =  root.findViewById(R.id.co2Circle);
             humiditytext =  root.findViewById(R.id.humidityCircle);
             temperaturetext =  root.findViewById(R.id.temperatureCircle);
             Retrofit retrofit= new Retrofit.Builder()
-                    .baseUrl("https://run.mocky.io/v3/812d24d5-b849-430a-b2da-fc897b1c63fb/")
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
+                    .baseUrl("https://run.mocky.io/v3/812d24d5-b849-430a-b2da-fc897b1c63fb/%22/")
+                            .addConverterFactory(GsonConverterFactory.create())
+                            .build();
             JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
             Call<List<Level>> call= jsonPlaceHolderApi.getLevel();
 
@@ -63,9 +62,9 @@ public class HomeFragment extends Fragment {
                 @Override
                 public void onResponse(Call<List<Level>> call, Response<List<Level>> response) {
                     List<Level> levelList= response.body();
-                   String co2=levelList.get(0).getCo2();
-                   String humidity=levelList.get(0).getHumidity();
-                   String temperature=levelList.get(0).getTemperature();
+                    String co2=levelList.get(0).getCo2();
+                    String humidity=levelList.get(0).getHumidity();
+                    String temperature=levelList.get(0).getTemperature();
 
                     co2text.setText(co2);
                     humiditytext.setText(humidity);
@@ -75,12 +74,9 @@ public class HomeFragment extends Fragment {
 
                 @Override
                 public void onFailure(Call<List<Level>> call, Throwable t) {
-                    Toast.makeText(getContext(),"noo",Toast.LENGTH_LONG).show();
-
+                    Toast.makeText(getContext(), "Connection not established", Toast.LENGTH_LONG).show();
                 }
-
-
-            });
+                });
             return root;
         }
 

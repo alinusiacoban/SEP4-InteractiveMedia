@@ -34,15 +34,15 @@ public class Terrarium {
 
     @PrimaryKey(autoGenerate = true)
 
-    private int id;
-    private String name;
-    private String type;
+   private int terrariumId;
+    private String terrariumName;
+    private String reptileLivingInTerrarium;
 
-    public Terrarium(int id, String name, String type)
+    public Terrarium(int terrariumId, String terrariumName, String reptileLivingInTerrarium)
     {
-        this.id = id;
-        this.name = name;
-        this.type = type;
+        this.terrariumId = terrariumId;
+        this.terrariumName = terrariumName;
+        this.reptileLivingInTerrarium = reptileLivingInTerrarium;
     }
 
     @Ignore

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.aliniacoban.fishingindenmark.R;
@@ -23,6 +24,7 @@ import java.util.concurrent.ExecutionException;
 public class ViewTerrariums extends Fragment {
 
     private ViewTerrariumsViewModel viewTerrariumsViewModel;
+
 
     private RecyclerView recyclerView;
     private TerrariumAdapter terrariumAdapter;
@@ -38,8 +40,10 @@ public class ViewTerrariums extends Fragment {
                 terrariumAdapter = new TerrariumAdapter(terrariums);
                 recyclerView.setAdapter(terrariumAdapter);
 
+
                 terrariumAdapter.setOnClickListener(position ->
                 {
+
                     viewTerrariumsViewModel.removeTerrarium(position);
                     Toast.makeText(getContext(), "Terrarium removed", Toast.LENGTH_SHORT).show();
                     terrariumAdapter.notifyDataSetChanged();
