@@ -8,9 +8,33 @@ import androidx.room.PrimaryKey;
 
 public class Terrarium {
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @PrimaryKey(autoGenerate = true)
 
-    private int terrariumId;
+   private int terrariumId;
     private String terrariumName;
     private String reptileLivingInTerrarium;
 
@@ -28,31 +52,9 @@ public class Terrarium {
 
     @Ignore
     public Terrarium(String terrariumName, String reptileLivingInTerrarium){
-        this.terrariumName = terrariumName;
-        this.reptileLivingInTerrarium = reptileLivingInTerrarium;
+        this.name = name;
+        this.type = type;
     }
 
-    public int getTerrariumId(){
-        return terrariumId;
-    }
-    public void setTerrariumId(int terrariumId)
-    {
-        this.terrariumId = terrariumId;
-    }
-    public String getTerrariumName()
-    {
-        return terrariumName;
-    }
-    public void setTerrariumName()
-    {
-        this.terrariumName = terrariumName;
-    }
-    public String getReptileLivingInTerrarium()
-    {
-        return reptileLivingInTerrarium;
-    }
-    public void setReptileLivingInTerrarium(String reptileLivingInTerrarium)
-    {
-        this.reptileLivingInTerrarium = reptileLivingInTerrarium;
-    }
+
 }
