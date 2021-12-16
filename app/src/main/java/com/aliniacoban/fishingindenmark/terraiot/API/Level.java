@@ -29,15 +29,31 @@ public class Level {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getCo2() {
         return co2;
+    }
+
+    public void setCo2(String co2) {
+        this.co2 = co2;
     }
 
     public String getHumidity() {
         return humidity;
     }
 
+    public void setHumidity(String humidity) {
+        this.humidity = humidity;
+    }
+
     public String getTemperature() {
         return temperature;
+    }
+
+    public void setTemperature(String temperature) {
+        this.temperature = temperature;
     }
 }

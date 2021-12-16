@@ -43,7 +43,7 @@ public class Terrarium {
     {
         return terrariumName;
     }
-    public void setTerrariumName()
+    public void setTerrariumName(String terrariumName)
     {
         this.terrariumName = terrariumName;
     }

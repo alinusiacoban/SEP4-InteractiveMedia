@@ -46,10 +46,12 @@ public class CreateTerrarium extends Fragment implements AdapterView.OnItemSelec
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.create_terrarium_fragment, container, false);
+        View view = inflater.inflate(R.layout.create_terrarium_fragment,
+                container, false);
         Button createTerrarium = view.findViewById(R.id.createNewTerrarium);
         EditText terrariumName = view.findViewById(R.id.terrariumNameCreateTerrarium);
         Spinner reptileType = view.findViewById(R.id.terrariumReptileCreateTerrarium);
@@ -66,7 +68,8 @@ public class CreateTerrarium extends Fragment implements AdapterView.OnItemSelec
                                        int position, long id) {
                 if(position == 0)
                     return;
-                Toast.makeText(getContext(), "Your selected reptile is "+ parent.getItemAtPosition(position), Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "Your selected reptile is "
+                        + parent.getItemAtPosition(position), Toast.LENGTH_LONG).show();
             }
 
             @Override

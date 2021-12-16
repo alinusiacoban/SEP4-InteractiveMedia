@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aliniacoban.fishingindenmark.R;
+import com.aliniacoban.fishingindenmark.terraiot.Model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
