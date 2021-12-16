@@ -61,7 +61,8 @@ public class ForgotPassword extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(ForgotPassword.this, "Email has been sent!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ForgotPassword.this,
+                            "Email has been sent!", Toast.LENGTH_LONG).show();
                     progressBar.setVisibility(View.GONE);
                 }
             }
