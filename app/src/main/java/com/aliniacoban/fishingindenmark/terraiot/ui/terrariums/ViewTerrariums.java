@@ -20,7 +20,11 @@ import com.aliniacoban.fishingindenmark.R;
 import com.aliniacoban.fishingindenmark.terraiot.adapter.TerrariumAdapter;
 
 import java.util.concurrent.ExecutionException;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class ViewTerrariums extends Fragment {
 
     private ViewTerrariumsViewModel viewTerrariumsViewModel;

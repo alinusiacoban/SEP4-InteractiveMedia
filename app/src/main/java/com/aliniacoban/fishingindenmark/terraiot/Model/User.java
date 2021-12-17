@@ -1,5 +1,9 @@
 package com.aliniacoban.fishingindenmark.terraiot.Model;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class User {
 
     public String email, username, password;

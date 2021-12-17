@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.aliniacoban.fishingindenmark.terraiot.ui.home.HomeFragment"
     android:background="#D3D3D3">
-
+    <!--Whole file written by Alin-->
     <TextView
         android:id="@+id/text_home"
         android:textColor="#D3D3D3"

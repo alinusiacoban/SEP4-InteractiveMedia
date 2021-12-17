@@ -3,7 +3,11 @@ package com.aliniacoban.fishingindenmark.terraiot.Model;
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 @Entity(tableName = "terrarium_table")
 
 public class Terrarium {

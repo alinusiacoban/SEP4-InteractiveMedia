@@ -1,3 +1,4 @@
+
 package com.aliniacoban.fishingindenmark.terraiot.API;
 
 import com.google.gson.Gson;
@@ -6,7 +7,11 @@ import com.google.gson.GsonBuilder;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class ServiceGenerator {
 
 

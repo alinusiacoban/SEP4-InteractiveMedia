@@ -8,7 +8,11 @@ import androidx.room.Query;
 import com.aliniacoban.fishingindenmark.terraiot.Model.Terrarium;
 
 import java.util.List;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 @Dao
 public interface AppDao {
 

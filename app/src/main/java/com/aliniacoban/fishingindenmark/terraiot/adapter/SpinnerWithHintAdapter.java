@@ -11,7 +11,11 @@ import android.widget.TextView;
 import androidx.core.content.ContextCompat;
 
 import com.aliniacoban.fishingindenmark.R;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class SpinnerWithHintAdapter extends ArrayAdapter<String> {
 
     Context context;

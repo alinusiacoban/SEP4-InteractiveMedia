@@ -1,5 +1,11 @@
 package com.aliniacoban.fishingindenmark.terraiot.ui.profile;
 
+
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class UploadImage {
 
     private String mImageUrl;

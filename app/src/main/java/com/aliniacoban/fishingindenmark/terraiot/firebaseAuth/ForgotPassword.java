@@ -15,7 +15,11 @@ import com.aliniacoban.fishingindenmark.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class ForgotPassword extends AppCompatActivity {
 
     private EditText emailEditText;

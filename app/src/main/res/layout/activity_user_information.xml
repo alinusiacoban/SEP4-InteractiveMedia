@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".terraiot.ui.profile.UserInformation"
     android:background="@drawable/profile_information_background">
-
+    <!--Whole file written by Alin-->
 
     <ImageView
         android:id="@+id/userProfileImage"

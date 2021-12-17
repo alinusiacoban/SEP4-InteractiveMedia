@@ -7,7 +7,11 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.aliniacoban.fishingindenmark.terraiot.Model.Terrarium;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 @Database(entities = {Terrarium.class}, version = 6, exportSchema = false)
 
 public abstract class AppDatabase extends RoomDatabase {
