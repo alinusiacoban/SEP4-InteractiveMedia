@@ -17,7 +17,11 @@ import com.aliniacoban.fishingindenmark.terraiot.Model.Terrarium;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class TerrariumAdapter extends RecyclerView.Adapter<TerrariumAdapter.ViewHolder> {
 
     private List<Terrarium> terrariums;
@@ -35,9 +39,9 @@ public class TerrariumAdapter extends RecyclerView.Adapter<TerrariumAdapter.View
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         if (terrariums != null && position <= terrariums.size()) {
-            holder.terrariumName.setText(terrariums.get(position).getName() + " ");
-            holder.reptileType.setText(terrariums.get(position).getType() + " ");
-            switch (terrariums.get(position).getType()) {
+            holder.terrariumName.setText(terrariums.get(position).getTerrariumName() + " ");
+            holder.reptileType.setText(terrariums.get(position).getReptileLivingInTerrarium() + " ");
+            switch (terrariums.get(position).getReptileLivingInTerrarium()) {
                 case "Crocodile":
                     holder.imageReptile.setBackgroundResource(R.drawable.crocodile);
                     break;
@@ -107,4 +111,3 @@ public class TerrariumAdapter extends RecyclerView.Adapter<TerrariumAdapter.View
         this.terrariums = terrariums;
     }
 }
-

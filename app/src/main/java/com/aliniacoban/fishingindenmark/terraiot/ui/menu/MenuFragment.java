@@ -43,7 +43,11 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class MenuFragment extends Fragment {
         private CreateTerrariumViewModel createTerrariumViewModel;
         private MenuViewModel menuViewModel;

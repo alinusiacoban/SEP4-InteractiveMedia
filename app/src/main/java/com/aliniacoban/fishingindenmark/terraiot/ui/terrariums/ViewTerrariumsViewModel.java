@@ -12,7 +12,11 @@ import com.aliniacoban.fishingindenmark.terraiot.repository.TerrariumRepository;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class ViewTerrariumsViewModel extends AndroidViewModel {
     private final TerrariumRepository terrariumRepository;
 

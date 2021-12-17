@@ -6,7 +6,11 @@ import static org.junit.Assert.assertEquals;
 import com.aliniacoban.fishingindenmark.terraiot.Model.Terrarium;
 
 import org.junit.Test;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class TerrariumTest {
     Terrarium terrarium = new Terrarium("B", "C");
 
@@ -29,7 +33,7 @@ public class TerrariumTest {
         assertEquals("Crocodile", terrarium.getReptileLivingInTerrarium());
     }
 
-
+//Alin code ends here
 
 
 }

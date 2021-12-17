@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
-
+    <!--Whole file written by Alin-->
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.aliniacoban.fishingindenmark.terraiot.ui.home.HomeFragment"

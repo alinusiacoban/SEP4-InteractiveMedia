@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".terraiot.ui.menu.MenuFragment"
     android:background="#D3D3D3">
-
+    <!--Whole file written by Alin-->
     <TextView
         android:id="@+id/textMenu"
         android:layout_width="wrap_content"

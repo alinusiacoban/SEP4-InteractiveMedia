@@ -16,7 +16,11 @@ import com.aliniacoban.fishingindenmark.R;
 import com.aliniacoban.fishingindenmark.terraiot.Model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
     TextView headlineRegister, registerButton, loginText;
     EditText registerUsername, registerPassword, registerEmail, registerConfirmPassword;

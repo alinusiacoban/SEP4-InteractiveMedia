@@ -16,6 +16,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class Repository {
     private static Repository instance;
     private MutableLiveData<List<Level>> posts;

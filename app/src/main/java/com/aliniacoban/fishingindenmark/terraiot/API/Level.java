@@ -2,6 +2,7 @@ package com.aliniacoban.fishingindenmark.terraiot.API;
 
 import com.google.gson.annotations.SerializedName;
 
+//Yuhao's code starts here
 public class Level {
 
     private int id;
@@ -56,4 +57,4 @@ public class Level {
     public void setTemperature(String temperature) {
         this.temperature = temperature;
     }
-}
+}//Yuhao's code ends here

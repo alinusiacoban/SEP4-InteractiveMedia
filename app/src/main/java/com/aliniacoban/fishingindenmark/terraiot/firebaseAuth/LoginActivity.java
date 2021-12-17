@@ -20,7 +20,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView register;
     private EditText loginEmail, loginPassword;
@@ -117,4 +121,4 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             }
         });
     }
-}
+}//Alin's code ends here

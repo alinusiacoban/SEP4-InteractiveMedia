@@ -13,6 +13,11 @@ import com.aliniacoban.fishingindenmark.terraiot.Model.database.AppDatabase;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class TerrariumRepository {
     private final AppDao dao;
     private static TerrariumRepository instance;

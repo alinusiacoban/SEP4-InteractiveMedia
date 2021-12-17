@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -26,7 +27,8 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-
+//UI done by Alin
+//Displaying mockup data done by Yuhao
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
@@ -61,6 +63,7 @@ public class HomeFragment extends Fragment {
             call.enqueue(new Callback<List<Level>>() {
                 @Override
                 public void onResponse(Call<List<Level>> call, Response<List<Level>> response) {
+
                     List<Level> levelList= response.body();
                     String co2=levelList.get(0).getCo2();
                     String humidity=levelList.get(0).getHumidity();
@@ -69,7 +72,7 @@ public class HomeFragment extends Fragment {
                     co2text.setText(co2);
                     humiditytext.setText(humidity);
                     temperaturetext.setText(temperature);
-                    //setting text here
+
                 }
 
                 @Override

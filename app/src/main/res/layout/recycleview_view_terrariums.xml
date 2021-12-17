@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="#D3D3D3"
     android:orientation="vertical">
-
+    <!--Whole file written by Alin-->
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/displayTerrariumInfo"

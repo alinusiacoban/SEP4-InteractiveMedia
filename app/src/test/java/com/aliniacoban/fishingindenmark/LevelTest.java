@@ -5,7 +5,11 @@ import static org.junit.Assert.assertEquals;
 import com.aliniacoban.fishingindenmark.terraiot.API.Level;
 
 import org.junit.Test;
-
+/////////////////////////////////////
+//                                //
+//Whole class is written by Alin  //
+//                                //
+////////////////////////////////////
 public class LevelTest {
 
     Level level = new Level("A", "B", "C");
